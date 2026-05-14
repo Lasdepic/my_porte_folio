@@ -1,0 +1,47 @@
+<div class="mt-32 md:mt-40 px-6">
+    <div class="mx-auto max-w-5xl md:-translate-x-4">
+      <div class="flex flex-col items-center gap-6 md:flex-row md:items-stretch md:gap-10">
+        <div class="shrink-0">
+          <div class="mt-14 box-content w-40 h-40 sm:w-44 sm:h-44 md:w-52 md:h-52 rounded-full bg-white p-1 shadow-xl ring-1 ring-gray-900/10">
+            <picture class="block w-full h-full rounded-full overflow-hidden">
+              <source srcset="assets/jordan.webp" type="image/webp" />
+              <img
+                src="assets/jordan.webp"
+                alt="Photo de Jordan"
+                class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="w-full flex-1">
+          <div class="rounded-xl border border-gray-200/60 bg-white/80 p-6 shadow-md backdrop-blur-md ring-1 ring-gray-900/5">
+            <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight text-gray-900 text-center md:text-left">
+              Clément Jordan
+            </h1>
+            <p class="mt-2 text-sm uppercase tracking-[0.3em] text-gray-500 text-center md:text-left">Développeur full-stack</p>
+
+            <div class="mt-5">
+              <app-information
+                [city]="city"
+                [phone]="phone"
+                [mail]="mail"
+                [githubUrl]="githubUrl"
+                [linkedinUrl]="linkedinUrl"
+              />
+            </div>
+          </div>
+
+          <div class="mt-6 rounded-xl border border-gray-200/60 bg-white/80 p-6 shadow-md backdrop-blur-md ring-1 ring-gray-900/5">
+            <h2 class="text-lg font-semibold tracking-tight text-gray-900 text-center md:text-left">
+              À propos de moi
+            </h2>
+            <p class="mt-3 text-gray-700 leading-relaxed text-center md:text-left">Développeur Web & Web Mobile en reconversion,
+Passionné par le développement web et les nouvelles technologies, je suis diplômé d’un Bac+2 Développeur Web & Web Application (niveau 5). J’aime concevoir des sites et applications modernes, interactifs et responsives, en combinant créativité, performance et expérience utilisateur. Curieux et motivé, je développe constamment mes compétences à travers des projets concrets et innovants afin de créer des expériences web complètes et performantes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+    
