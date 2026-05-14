@@ -43,6 +43,7 @@ export class Language {
     {
       title: 'Base de données',
       items: [
+        { name: 'MySQL', iconSrc: 'assets/icons/MySQL.svg' },
         { name: 'Firebase', iconSrc: 'assets/icons/firebase.svg' },
         { name: 'Supabase', iconSrc: 'assets/icons/supabase.svg' },
         { name: 'MongoDB', iconSrc: 'assets/icons/mongodb.svg' },

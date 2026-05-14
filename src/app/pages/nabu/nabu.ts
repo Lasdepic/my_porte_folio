@@ -1,6 +1,16 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
+type TechItem = Readonly<{
+  name: string;
+  iconSrc: string;
+}>;
+
+type TechCategory = Readonly<{
+  title: string;
+  items: readonly TechItem[];
+}>;
+
 @Component({
   selector: 'app-nabu-page',
   imports: [RouterLink],
@@ -11,4 +21,31 @@ import { RouterLink } from '@angular/router';
 export class NabuPage {
   readonly frontendRepoUrl = 'https://github.com/Lasdepic/frontend_nabu';
   readonly backendRepoUrl = 'https://github.com/Lasdepic/backend_nabu';
+
+  readonly features = [
+    'Inscription et connexion utilisateur',
+    'Gestion des paquets de documents',
+    "Suivi de l'historique d'envois",
+    'Gestion des corpus',
+    'API REST sécurisée par JWT',
+  ];
+
+  readonly stack: readonly TechCategory[] = [
+    {
+      title: 'Frontend',
+      items: [
+        { name: 'JavaScript', iconSrc: 'assets/icons/javascript.svg' },
+        { name: 'HTML', iconSrc: 'assets/icons/html5.svg' },
+        { name: 'CSS', iconSrc: 'assets/icons/css.svg' },
+      ],
+    },
+    {
+      title: 'Backend',
+      items: [{ name: 'PHP', iconSrc: 'assets/icons/php.svg' }],
+    },
+    {
+      title: 'Base de données',
+      items: [{ name: 'MySQL', iconSrc: 'assets/icons/MySQL.svg' }],
+    },
+  ];
 }
