@@ -1,21 +1,18 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
-import { Hero } from './components/hero/hero';
-import { Projects } from './components/projects/projects';
 import { Footer } from './components/footer/footer';
-import { Language } from './components/language/language';
 
 @Component({
   selector: 'app-root',
   imports: [
     Header,
-    Hero,
-    Language,
-    Projects,
-    Footer
+    RouterOutlet,
+    Footer,
   ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class App {
   title = 'my_porte_folio';
