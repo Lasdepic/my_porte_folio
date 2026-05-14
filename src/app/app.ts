@@ -11,7 +11,7 @@ import { Footer } from './components/footer/footer';
     Footer,
   ],
   templateUrl: './app.html',
-  styleUrl: './app.css',
+  styleUrl: './styles/app.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class App {

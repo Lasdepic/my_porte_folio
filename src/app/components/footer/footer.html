@@ -1,3 +1,53 @@
-<footer class="mt-16 px-6 pb-12" aria-label="Pied de page">
-	<div class="mx-auto max-w-5xl"></div>
+<footer class="mt-16 border-t border-gray-200 bg-white/80 backdrop-blur-md" aria-label="Pied de page">
+	<div class="mx-auto max-w-5xl px-6 py-12">
+		<div class="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+			<div class="max-w-md">
+				<p class="text-base font-semibold tracking-tight text-gray-900">{{ fullName }}</p>
+				<p class="mt-1 text-sm text-gray-600">{{ roleLabel }}</p>
+				<p class="mt-4 text-sm leading-relaxed text-gray-600">
+					Portfolio personnel : projets, compétences et liens de contact.
+				</p>
+			</div>
+
+			<nav class="grid grid-cols-2 gap-x-10 gap-y-3 text-sm" aria-label="Liens">
+				<a
+					class="text-gray-600 hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-2"
+					[routerLink]="['/']"
+					fragment="projects"
+				>
+					Projets
+				</a>
+
+				<a
+					class="text-gray-600 hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-2"
+					[href]="mailHref"
+				>
+					Email
+				</a>
+
+				<a
+					class="text-gray-600 hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-2"
+					[href]="githubUrl"
+					target="_blank"
+					rel="noopener noreferrer me"
+				>
+					GitHub
+				</a>
+
+				<a
+					class="text-gray-600 hover:text-indigo-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-2"
+					[href]="linkedinUrl"
+					target="_blank"
+					rel="noopener noreferrer me"
+				>
+					LinkedIn
+				</a>
+			</nav>
+		</div>
+
+		<div class="mt-10 flex flex-col-reverse gap-4 border-t border-gray-200 pt-6 text-xs text-gray-500 sm:flex-row sm:items-center sm:justify-between">
+			<p>© {{ fullName }}. Tous droits réservés.</p>
+			<p class="text-gray-500">Construit avec Angular et Tailwind CSS.</p>
+		</div>
+	</div>
 </footer>
