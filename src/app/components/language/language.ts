@@ -29,6 +29,7 @@ export class Language {
         { name: 'JavaScript', iconSrc: 'assets/icons/javascript.svg' },
         { name: 'Angular', iconSrc: 'assets/icons/angular.svg' },
         { name: 'Next.js', iconSrc: 'assets/icons/nextdotjs.svg' },
+        { name: 'Dart', iconSrc: 'assets/icons/dart.svg' },
       ],
     },
     {
@@ -52,7 +53,10 @@ export class Language {
     },
     {
       title: 'Mobile',
-      items: [{ name: 'Flutter', iconSrc: 'assets/icons/flutter.svg' }],
+      items: [
+        { name: 'Flutter', iconSrc: 'assets/icons/flutter.svg' },
+        { name: 'Dart', iconSrc: 'assets/icons/dart.svg' },
+      ],
     },
   ];
 }
