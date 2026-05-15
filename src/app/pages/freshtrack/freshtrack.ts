@@ -11,6 +11,12 @@ type TechCategory = Readonly<{
   items: readonly TechItem[];
 }>;
 
+type Screenshot = Readonly<{
+  src: string;
+  alt: string;
+  caption: string;
+}>;
+
 @Component({
   selector: 'app-freshtrack-page',
   imports: [RouterLink],
@@ -20,6 +26,24 @@ type TechCategory = Readonly<{
 })
 export class FreshtrackPage {
   readonly repoUrl = 'https://github.com/Lasdepic/freshtrack';
+
+  readonly screenshots: readonly Screenshot[] = [
+    {
+      src: 'assets/images/freshTrack/connexion.jpg',
+      alt: "Écran de connexion de l'application FreshTrack",
+      caption: 'Connexion',
+    },
+    {
+      src: 'assets/images/freshTrack/produit.jpg',
+      alt: "Liste des produits dans l'application FreshTrack",
+      caption: 'Produits',
+    },
+    {
+      src: 'assets/images/freshTrack/scan.webp',
+      alt: "Scanner dans l'application FreshTrack",
+      caption: 'Scanner',
+    },
+  ];
 
   readonly features = [
     'Suivi des produits alimentaires et de leurs dates de péremption',

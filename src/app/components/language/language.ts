@@ -27,6 +27,7 @@ export class Language {
         { name: 'Bootstrap', iconSrc: 'assets/icons/bootstrap.svg' },
         { name: 'Tailwind CSS', iconSrc: 'assets/icons/tailwindcss.svg' },
         { name: 'JavaScript', iconSrc: 'assets/icons/javascript.svg' },
+        { name: 'React', iconSrc: 'assets/icons/react.svg' },
         { name: 'Angular', iconSrc: 'assets/icons/angular.svg' },
         { name: 'Next.js', iconSrc: 'assets/icons/nextdotjs.svg' },
         { name: 'Dart', iconSrc: 'assets/icons/dart.svg' },
