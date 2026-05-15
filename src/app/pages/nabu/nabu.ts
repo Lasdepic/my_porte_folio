@@ -11,6 +11,12 @@ type TechCategory = Readonly<{
   items: readonly TechItem[];
 }>;
 
+type Screenshot = Readonly<{
+  src: string;
+  alt: string;
+  caption: string;
+}>;
+
 @Component({
   selector: 'app-nabu-page',
   imports: [RouterLink],
@@ -21,6 +27,19 @@ type TechCategory = Readonly<{
 export class NabuPage {
   readonly frontendRepoUrl = 'https://github.com/Lasdepic/frontend_nabu';
   readonly backendRepoUrl = 'https://github.com/Lasdepic/backend_nabu';
+
+  readonly screenshots: readonly Screenshot[] = [
+    {
+      src: 'assets/images/Nabu/nabu-login.png',
+      alt: "Écran de connexion de l'application Nabu",
+      caption: 'Connexion',
+    },
+    {
+      src: 'assets/images/Nabu/nabu-dashboard.png',
+      alt: "Interface principale de l'application Nabu",
+      caption: 'Tableau de bord',
+    },
+  ];
 
   readonly features = [
     'Inscription et connexion utilisateur',
