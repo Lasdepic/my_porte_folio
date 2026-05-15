@@ -84,7 +84,7 @@
                 [href]="shot.src"
                 target="_blank"
                 rel="noreferrer"
-                class="block bg-gray-50 p-2"
+                class="block"
                 [attr.aria-label]="shot.caption + ' (ouvrir en grand)'"
               >
                 <img
@@ -92,7 +92,7 @@
                   [alt]="shot.alt"
                   loading="lazy"
                   decoding="async"
-                  class="h-auto w-full object-contain"
+                  class="w-full cursor-zoom-in object-contain bg-gray-50"
                 />
               </a>
               <figcaption
