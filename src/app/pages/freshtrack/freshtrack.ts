@@ -17,6 +17,11 @@ type Screenshot = Readonly<{
   caption: string;
 }>;
 
+type LearnedItem = Readonly<{
+  title: string;
+  description: string;
+}>;
+
 @Component({
   selector: 'app-freshtrack-page',
   imports: [RouterLink],
@@ -69,6 +74,25 @@ export class FreshtrackPage {
     {
       title: 'Base de données',
       items: [{ name: 'Firestore', iconSrc: 'assets/icons/firebase.svg' }],
+    },
+  ];
+
+  readonly learned: readonly LearnedItem[] = [
+    {
+      title: 'Flutter & Dart',
+      description: 'Développement mobile multiplateforme avec widgets et navigation Flutter.',
+    },
+    {
+      title: 'Firebase Auth',
+      description: 'Authentification utilisateur avec Firebase Authentication.',
+    },
+    {
+      title: 'Firestore temps réel',
+      description: 'Synchronisation des données en temps réel avec Firestore.',
+    },
+    {
+      title: 'Scan de codes-barres',
+      description: "Intégration d'un scanner pour identifier les produits alimentaires.",
     },
   ];
 }
