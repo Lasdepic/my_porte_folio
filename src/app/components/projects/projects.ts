@@ -29,5 +29,11 @@ export class Projects {
       detailsUrl: '/projets/nabu',
       scopeLabel: 'Full-stack',
     },
+    {
+      name: 'My Portfolio',
+      tagline: 'Mon portfolio personnel développé avec Angular 19 et Tailwind CSS.',
+      detailsUrl: '/projets/portfolio',
+      scopeLabel: 'Angular',
+    },
   ];
 }
