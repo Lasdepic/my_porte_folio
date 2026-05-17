@@ -16,10 +16,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": {
-              "base": "docs",
-              "browser": ""
-            },
+            "outputPath": "dist/my_porte_folio",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
