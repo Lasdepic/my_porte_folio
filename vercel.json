@@ -1,0 +1,4 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/my_porte_folio/browser"
+}
