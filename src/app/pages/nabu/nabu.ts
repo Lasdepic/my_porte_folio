@@ -17,6 +17,11 @@ type Screenshot = Readonly<{
   caption: string;
 }>;
 
+type LearnedItem = Readonly<{
+  title: string;
+  description: string;
+}>;
+
 @Component({
   selector: 'app-nabu-page',
   imports: [RouterLink],
@@ -65,6 +70,25 @@ export class NabuPage {
     {
       title: 'Base de données',
       items: [{ name: 'MySQL', iconSrc: 'assets/icons/MySQL.svg' }],
+    },
+  ];
+
+  readonly learned: readonly LearnedItem[] = [
+    {
+      title: 'Architecture REST',
+      description: "Conception d'une API PHP structurée en Controller / DAO / Model.",
+    },
+    {
+      title: 'Authentification JWT',
+      description: "Implémentation d'un système de tokens sécurisés côté backend et frontend.",
+    },
+    {
+      title: 'Routing JS vanilla',
+      description: 'Navigation côté client sans framework, en JavaScript pur.',
+    },
+    {
+      title: 'Travail en équipe',
+      description: 'Projet réalisé en équipe avec gestion de branches Git et pull requests.',
     },
   ];
 }
