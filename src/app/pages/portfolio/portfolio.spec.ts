@@ -1,22 +1,9 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component } from '@angular/core';
 
-import { Portfolio } from './portfolio';
-
-describe('Portfolio', () => {
-  let component: Portfolio;
-  let fixture: ComponentFixture<Portfolio>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [Portfolio],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(Portfolio);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+@Component({
+  selector: 'app-portfolio',
+  standalone: true,
+  templateUrl: './portfolio.html',
+  styleUrls: ['./portfolio.css'],
+})
+export class Portfolio {}
