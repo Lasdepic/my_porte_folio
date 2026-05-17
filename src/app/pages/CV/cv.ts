@@ -88,7 +88,7 @@ export class CvPage {
     { name: 'MongoDB', iconSrc: 'assets/icons/mongodb.svg' },
     { name: 'Flutter', iconSrc: 'assets/icons/flutter.svg' },
     { name: 'Dart', iconSrc: 'assets/icons/dart.svg' },
-    { name: 'Node.js', iconSrc: 'assets/icons/nodedotjs.svg' },
+    { name: 'Node.js', iconSrc: 'assets/icons/nodejs.svg' },
   ];
 
   readonly softSkills = [
