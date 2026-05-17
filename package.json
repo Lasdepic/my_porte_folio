@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --output-path docs --base-href /my_porte_folio/ && git add . && git commit -m 'deploy' && git push"
   },
   "private": true,
   "packageManager": "npm@11.12.1",
