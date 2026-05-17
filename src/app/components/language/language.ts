@@ -40,6 +40,7 @@ export class Language {
         { name: 'Symfony', iconSrc: 'assets/icons/symfony.svg' },
         { name: 'Firebase', iconSrc: 'assets/icons/firebase.svg' },
         { name: 'Express.js', iconSrc: 'assets/icons/express.svg' },
+        { name: 'Node.js', iconSrc: 'assets/icons/nodejs.svg' },
       ],
     },
     {
